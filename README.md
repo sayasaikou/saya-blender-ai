@@ -126,8 +126,12 @@ Blender 5 上 Workbench DEPTH、合成器 RLayers、RenderSlot.z、多层 EXR �
 | `tools/mtr_render.py` | 走 MMD Template Renderer 的 CHECK→APPLY→RENDER | Blender + 两个扩展 |
 | `tools/bl2ai_masked.py` | ComfyUI 分区 img2img（上传 → mask → 采样 → 回传） | Python + Pillow + 本地 ComfyUI |
 | `tools/depth_raycast.py` | 光线投射出深度图（近白远黑） | Blender 自带 numpy |
+| `tools/mat_upgrade.py` | 把 MMD toon 硬改成 Principled（失败方案参考实现） | Blender |
+| `tools/mmd_inspect.py` | 导出 MMD 着色节点组的输入输出与内部节点类型 | Blender |
 
 脚本里的路径全部是参数或环境变量，没有硬编码目录。
+
+实验时间线与每个版本的对照见 [`docs/experiment-log.md`](docs/experiment-log.md)。
 
 ## 复现前提
 
